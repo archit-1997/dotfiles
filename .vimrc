@@ -13,11 +13,11 @@
 "                                                              "
 "                                                              "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
-"                                                              "
-" Name 	:	Archit Singh                                         "
-" Email	:	architsingh456@gmail.com                             "
-" GitHub :	archit-1997                                        "
-"                                                              "
+"                                                           "
+" Name 	:	Archit Singh                                      "
+" Email	:	architsingh456@gmail.com                          "
+" GitHub :	archit-1997                                     "
+"                                                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
