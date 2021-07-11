@@ -45,6 +45,7 @@ set numberwidth=5
 set linespace=3
 set splitright
 set termguicolors
+set t_Co=256
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 
 
@@ -137,9 +138,19 @@ nmap <leader>n	:tabnew<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 "Ale lint settings
 let g:ale_lint_on_enter = 1
-let g:ale_linters = {'cpp': ['clang']}
+" let g:ale_linters = {'cpp': ['clang']}
 let g:ale_lint_on_text_changed = 'always'
 let g:ale_lint_delay=100
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
+"Airline Settings
+let g:airline_theme='solarized'
+let g:airline_powerline_fonts = 1
+let g:airline_extensions = []
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 
 
@@ -153,7 +164,7 @@ let g:ctrlp_working_path_mode = 'ra'
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
-"vim plug plugin
+"Plugin
 call plug#begin('~/.vim/plugged')
 Plug 'Shougo/vimproc.vim'
 Plug 'preservim/nerdtree'
@@ -169,7 +180,12 @@ Plug 'morhetz/gruvbox'
 Plug 'altercation/vim-colors-solarized'
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/goyo.vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 "          ______    ____    ______                            "
 "         |  ____|  / __ \  |  ____|                           "
