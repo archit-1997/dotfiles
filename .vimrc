@@ -51,14 +51,14 @@ set t_Co=256
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 " Enable folding
-set foldmethod=indent
-set foldlevel=99
+ set foldmethod=indent
+ set foldlevel=99
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 "Enable folding with the spacebar
-nnoremap <space> za
+" nnoremap <space> za
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 
 
@@ -116,11 +116,20 @@ nmap <leader>h  :sp<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
-"tab switching
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+"Mapping arrow key to move in between splits
+noremap <up> <C-w><up>
+noremap <down> <C-w><down>
+noremap <left> <C-w><left>
+noremap <right> <C-w><right> 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
+"disabling arrow keys
+" noremap <Up> <Nop>
+" noremap <Down> <Nop>
+" noremap <Left> <Nop>
+" noremap <Right> <Nop>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 
 
@@ -129,9 +138,7 @@ nnoremap <C-l> <C-w>l
 "For opening files in the new tab and then type the file name
 nmap <leader>o	:tabedit
 "For going to the next tab
-nmap <leader>j	:tabn<CR>
-"For opening a new tab to the right
-nmap <leader>n	:tabnew<CR>
+nmap <leader>n	:tabn<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 
 
@@ -176,13 +183,12 @@ Plug 'ervandew/supertab'
 Plug 'tibabit/vim-templates'
 Plug 'tpope/vim-commentary'
 Plug 'kien/ctrlp.vim'
-Plug 'morhetz/gruvbox'
-Plug 'altercation/vim-colors-solarized'
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/goyo.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 
