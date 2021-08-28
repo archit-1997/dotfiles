@@ -1,5 +1,4 @@
 
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                                              "
 "    __      ___              _____             __ _           "
@@ -162,11 +161,24 @@ let g:airline_extensions = []
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
+"FocusIn/FocusOut mode off
+let g:TerminusFocusReporting=0
+nnoremap <Esc><Esc> <nop>
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 "CtrlP fuzzy search plugin
 let g:ctrlp_map='<c-p>'
 let g:ctrlp_show_hidden=1
 set wildignore+=.git
 let g:ctrlp_working_path_mode = 'ra'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
+"Template settings
+let g:tmpl_author_email = 'architsingh456@gmail.com'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 
 
@@ -189,6 +201,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-surround'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 
