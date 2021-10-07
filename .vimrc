@@ -45,6 +45,7 @@ set linespace=3
 set splitright
 set termguicolors
 set t_Co=256
+colorscheme solarized
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 
 
@@ -104,6 +105,7 @@ nmap <leader>f	:q!<CR>
 nmap <leader>t 	:NERDTreeToggle<CR>
 nmap <leader>d  :1,$d<CR>
 nmap <leader>g  :Goyo<CR>
+nmap <leader>z  :vertical resize 60<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 
 
