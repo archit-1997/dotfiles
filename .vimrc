@@ -12,14 +12,31 @@
 "                                                              "
 "                                                              "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
-"
-"
 " Name 	:	Archit Singh                                      
 " Email	:	architsingh456@gmail.com                          
 " GitHub :	archit-1997                                     
-"
-"
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
+"Plugin
+call plug#begin('~/.vim/plugged')
+Plug 'Shougo/vimproc.vim'
+Plug 'preservim/nerdtree'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'sheerun/vim-polyglot'
+Plug 'Raimondi/delimitMate'
+Plug 'dense-analysis/ale'
+Plug 'ervandew/supertab'
+Plug 'tibabit/vim-templates'
+Plug 'tpope/vim-commentary'
+Plug 'kien/ctrlp.vim'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tpope/vim-surround'
+Plug 'airblade/vim-gitgutter'
+Plug 'rafi/awesome-vim-colorschemes'
+Plug 'dracula/vim', { 'as': 'dracula' }
+call plug#end()
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""    
@@ -43,6 +60,7 @@ set copyindent
 set numberwidth=5
 set linespace=3
 set splitright
+colorscheme pyte
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 
 
@@ -157,26 +175,6 @@ let g:tmpl_author_email = 'architsingh456@gmail.com'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
-"Plugin
-call plug#begin('~/.vim/plugged')
-Plug 'Shougo/vimproc.vim'
-Plug 'preservim/nerdtree'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'sheerun/vim-polyglot'
-Plug 'Raimondi/delimitMate'
-Plug 'dense-analysis/ale'
-Plug 'ervandew/supertab'
-Plug 'tibabit/vim-templates'
-Plug 'tpope/vim-commentary'
-Plug 'kien/ctrlp.vim'
-Plug 'ryanoasis/vim-devicons'
-Plug 'tpope/vim-surround'
-Plug 'airblade/vim-gitgutter'
-Plug 'dracula/vim', { 'as': 'dracula' }
-call plug#end()
-
-colorscheme dracula
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 "          ______    ____    ______                            "
