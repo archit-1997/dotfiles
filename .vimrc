@@ -35,6 +35,7 @@ Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'vim-scripts/ReplaceWithRegister'
 call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 
@@ -60,7 +61,8 @@ set copyindent
 set numberwidth=5
 set linespace=3
 set splitright
-colorscheme pyte
+colorscheme solarized
+set bg=light
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""      
 
 
